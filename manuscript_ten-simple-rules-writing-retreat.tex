@@ -1,0 +1,337 @@
+% Template for PLoS
+% Version 3.6 Aug 2022
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+\usepackage{setspace} 
+\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Ten simple rules to organise an effective (student-led) writing retreat}
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Nicholas Winterle Daudt\textsuperscript{1,2*},
+Claudia Hird\textsuperscript{1,3},
+Eleanor Kelly\textsuperscript{1},
+Elli Leinikki\textsuperscript{1},
+Gretchen McCarthy\textsuperscript{1},
+Ian S. Dixon-Anderson\textsuperscript{1},
+Jackson Beagley\textsuperscript{1,4},
+Jessica Moffitt\textsuperscript{1},
+Joseph Curtis\textsuperscript{1},
+Lindsay Wickman\textsuperscript{1\textcurrency},
+Meghan Duffy\textsuperscript{1,4},
+Saskia Foreman\textsuperscript{1},
+Leah M. Crowe\textsuperscript{1,2}
+\\
+\bigskip
+\textbf{1} Department of Marine Science, University of Otago, Dunedin, Aotearoa New Zealand
+\\
+\textbf{2} Department of Mathematics and Statistics, University of Otago, Dunedin, Aotearoa New Zealand
+\\
+\textbf{3} Department of Zoology, University of Otago, Dunedin, Aotearoa New Zealand
+\\
+\textbf{4} Department of Geology, University of Otago, Dunedin, Aotearoa New Zealand
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+% \Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+% \ddag These authors also contributed equally to this work.
+
+% Current address notes
+\textcurrency Current Address: Marine Mammal Institute, Department of Fisheries, Wildlife and Conservation Sciences, Oregon State University, Newport, OR, USA 
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* nicholaswdaudt@gmail.com 
+
+\end{flushleft}
+
+% Please keep the abstract below 300 words
+%\section*{Abstract}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
+
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.   
+%\section*{Author summary}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
+
+\linenumbers
+
+\section*{Introduction}
+
+Writing is an integral part of academic work. No matter in your career stage, your scholarly output will advance scientific knowledge and count in your career development, getting grants or landing a job. However, in multi-tasking admin, teaching, fieldwork, among other activities, we frequently put aside how important it is to take the proper time to wrap it all up in a written document (e.g. thesis, scientific paper). Scientific writing has its technical tips and tricks, but ultimately, it is a creative act. Yet, the lack of time to think critically, create knowledge and transfer it into words is a significant complaint in academia [~\cite{menzies}]. Therefore, we have to actively disengage from other tasks to enable us to properly engage with the act of writing [~\cite{murray2013}]. In this context, writing retreats have been shown as effective opportunities to unplug from daily work routines, allowing scientists to excel in their passion: producing science.
+
+Writing retreats are structured periods where academics have dedicated time slots for deep-focused writing [~\cite{mcgrail2006, murray2009}]. Initially driven by the motivation to connect with our PhD cohort [~\cite{bernery, omeara}] but also wanting to leverage the moment to have a productive week of work (no pressure, but the clock does not stop ticking!), we set up for a 5-day writing retreat in a remote field station. Once we returned from that week, we realised how much writing we had accomplished and how important it was to share moments as PhDs going through similar experiences in various stages of our degrees. The motivation after that week was such that we organised a second successful retreat edition a year later.
+
+Here, we build on these experiences of student-led writing retreats and lay out Ten Simple Rules for organising an effective retreat. Althuogh the authors are/were all PhD candidates at the time of the retreats, the rules herein should be helpful for research groups and academics more broadly. We cover steps to facilitate the planning/execution of pre- (Rules 1--4), during (Rules 5--9), and pos- (Rule 10) writing retreat actions, but not writing techniques per se. There are many resources on academic writing that we will not delve into but encourage their reading (e.g. [~\cite{turbek2016, hotaling2020, carter2020, cargill2021}]), including articles in this series [~\cite{weinberger2015, mensh2017, peterson2018}]. Otherwise, you may consider writing a boring contribution instead [~\cite{sand2007}].
+
+\section*{Rule 1: Leverage university facilities}
+
+A change of scenery can help inspire productivity whether the writing retreat is structured as a locally organized event or as multi-day trip. Local facilities are often more straightforward as this can include meeting rooms and other bookable campus spaces. For longer retreats, students, regardless of their departmental affiliation, should inquire about their university’s field stations. Many biology and ecology programmes, for example, have field stations (for a global list, see [~\cite{tydecks}]), and by leveraging university owned facilities, retreat costs can be kept within a manageable budget. There are often times of the year when field stations are underutilized, and having another reason for people to be in a field station during these periods can help with ongoing upkeep. In addition, field stations are often in remote, beautiful settings amongst nature with limited distractions providing an environment conducive to focusing and connecting with peers. If your university doesn’t have a field station, or one that would properly support a writing retreat, other universities are often open to shared use if availability allows. We encourage students in this situation to inquire with station managers to build those relationships.
+
+When determining if a space is suitable for a writing retreat, it is important to take an inventory of available amenities both within the facility and in the area. We made use of our department’s marine field station in the town of Oban on Rakiura/Stewart Island, a small island off the southern coast of the South Island of Aotearoa New Zealand. This location suited us well as everything we needed was within walking distance. Because this is a small community (around 400 year-round residents) abutting a national forest, we had limited distractions, straightforward options for restaurants and groceries, and we had ample options for walking tracks and beach strolls. This field station is a three-bedroom home with twelve bunks, three bathrooms, a kitchen, and an open space with a large table, two desks, and two couches. Ten people attended in each of the two years which was a comfortable number for the space. When determining if a space will work for a retreat, it is also important to understand the internet availability, the heating/cooling systems, sleeping spaces, and work spaces (including available power points).
+
+\section*{Rule 2: Prepare a proposal}
+
+Before you reach out for support, it is important to be prepared and put together a proposal. Your proposal should include possible locations, accommodation, transport, dates and potential participants. Deciding how many people and specifically who the retreat is for is crucial as it is required for other planning details. Numbers may be decided for you based on the accommodation available (see Rule 1) or it could be the other way around. Once you have outlined possible locations and numbers, it is important to work out associated costs. Additional considerations may include transportation to, from and around the writing retreat location, food requirements, and dates/times.
+
+Once you have written your proposal, you can reach out for support. The first port of call should be the departments of the students attending the retreat. Other bodies within the university may be able to fund and support your writing retreat such as higher divisions and postgraduate support offices. Industry, community organisations (e.g. Lions and Rotary Clubs) and fundraising may be able to provide supplemental support, if needed. A well-considered proposal will provide a good foundation for your retreat and set you up for success.
+
+\section*{Rule 3: Structure your retreat}
+
+We were fortunate that our department was very supportive of the writing retreat proposal, and when planning the first trip, encouraged us to use experts on staff at the university. At the University of Otago, we worked with the Higher Education Development Centre which provided resources and guidance on how to structure both productive days and the overall week. There are many resources available to guide writing retreats for PhD students, including this one, but we encourage student to take advantage of these kinds of services at their universities if they are available.
+
+Our week was organized so that we traveled to and from the field station on Sunday and Saturday to allow for Monday through Friday to be fully structured for the retreat. We left extra time on travel days to settle in/pack up, grocery shop, and explore the area. Upon arrival, it was important to have a short welcome discussion to establish ground rules and make sure everyone was comfortable in the space (see Rule 5). Each work day was themed to give some guidance on what to try and tackle at that point in the week (Table~\ref{table1}). We also made sure to intersperse optional fun activities throughout the week which included a pub quiz (i.e. bar trivia), wildlife tours, game night, and other local events.
+
+% Place tables after the first paragraph in which they are cited.
+\begin{table}[!ht]
+%\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\caption{
+{\bf Daily themes over a 5-day writing retreat.}}
+\begin{tabular}{p{1in}p{2in}p{2in}}
+\hline
+{\bf Weekday} & {\bf Theme} & {\bf Description}\\ \thickhline
+Monday & Getting started & Commit to the goal for the week (see Rule 4), organize a strategy, and establish accountability partners.\\ \hline
+Tuesday & Words on the page & Just start writing something! (Rule 6)\\ \hline
+Wednesday & Keep going! & Continue writing and refine. (Rule 6)\\ \hline
+Thursday & Good enough & Exchange work within accountability partners to practice giving and receiving comments. Use this opportunity to reflect on writing structure and style from a reader’s perspective. (Rule 8)\\ \hline
+Friday & Wrap it up & End the retreat by reflecting on what was accomplished this week (Rule 10) and develop a plan on how to proceed.\\ \hline
+\end{tabular}
+\label{table1}
+%\end{adjustwidth}
+\end{table}
+
+The schedule for each day was roughly between 9 am and 6 pm and was provided in advance of the retreat so participants knew what to expect for dedicated work time (see \nameref{S1_Appendix}). A different leader was designated for each day to lead discussions and keep the time for writing blocks (between 60 and 120 min) and breaks (between 30 and 60 min). We started each morning together by writing for 15 minutes using prompts that varied from reflections on the different ways we write in our lives to the most ridiculous title we could conjure for our research. This was a productive way to get our writing engine revving and a fun opportunity to share writing with each other. Each evening we ended the day by a reflective discussion on how the day went (with an 'accountability buddy' [e.g. 'Rule 5' in ~\cite{peterson2018}]), a shared dinner, and presentations (see Rule 7).
+
+\section*{Rule 4: Have a pre-retreat meeting}
+
+Hosting a pre-retreat meeting with attendees before departure facilitates a smoother and more productive retreat by addressing the primary objectives of introductions, finalizing logistics, and goal-setting. During the event, participants will get a chance to meet (if they haven’t already) and establish or reinforce a familiar group dynamic, an essential prerequisite for a retreat atmosphere of respect and accountability (see Rules 5 and 10). Fine-tuning the plan for retreat logistics and scheduling through group conversation can identify opportunities for clarification and improvement, and create a sense of shared ownership over day-to-day programming. Most importantly, a pre-retreat meeting provides a chance for participants to identify or workshop specific writing goals with time to prepare relevant resources (literature, data analysis, input of academic supervisors) so that these non-writing activities don't become distractions during the initial days of the retreat.
+
+We suggest participants should arrive at the pre-retreat meeting with a preliminary goal to share with the group. Goals can be quantitative (word count, page number) or qualitative (paper sections, revision of existing work). For reference, the average output during our 5-day retreats was 1.2 pages or 550 words per day, and ranged from refined work on a single chapter/manuscript section to drafts of entire manuscripts. Critically, the specific thesis component (or other written work) should be identified at the meeting to remove the friction of choosing a piece of writing at the outset of the retreat and maximizing preparation time. Sharing specific goals has the additional benefits of introducing the group to everybody's topic of research, as well as identifying whether a participant's preliminary goal is appropriately ambitious for an extended period of dedicated writing.
+
+We recommend that a pre-retreat meeting be held no more than two weeks before departure, allowing time for goal-oriented preparation while limiting stagnation of attention and momentum heading into the retreat. If possible, hosting the event in person (ideally off-campus) is preferrable, although most of the aims of the meeting could be achieved via video conference if necessary (for instance, if you have people from other campi attending the retreat). Secondary objectives for a pre-retreat meeting could include selecting creative writing prompts, topics for presentations (if these are included in your retreat), "get to know you" activities, signing up for roles (meal spots, daily facilitator), or crowd-sourcing ideas for social aspects such as field trips or evening activities. If a planning event cannot be arranged before the retreat, objectives of the meeting (introductions, goal-setting, flexible logistic planning) should still be performed during the first day of the retreat (likely just after discussing the ground rules; see Rule 5), though this will come at the expense of writing time, momentum, and opportunities for preparation.
+
+\section*{Rule 5: Establish ground rules}
+
+At the start of your retreat, it is important to establish clear ground rules and expectations. These can include shared expectations for the group, such as setting quiet hours, assigning household responsibilities (i.e. cooking and cleaning) and setting guidelines for breaks. The document used as the basis for our ground rules can be found in \nameref{S2_Appendix}. Ground rules should also set the tone of the retreat, creating a balanced foundation for respect, productivity and enthusiasm.
+
+At our retreat, the primary guideline we established was a focus on respectful and non-judgemental interactions between all participants. This attitude allowed flexibility in goal setting and accomplishments depending on each person's needs and stage of their PhD. The baseline expectation of respect also led to creating clear expectations for working versus quiet hours and maintaining a productive working environment. During our ground rule meeting, we also discussed the need for flexibility to ensure our retreat catered to the needs of all the participants. For example, not all participants are native English speakers and may find full days of writing and discussion in English more tiring. As a result, we designated certain writing blocks as optional---if participants needed a longer break or felt their time would be better spent refreshing their mind with a forest walk or gym session, there was no judgement. Continuing with the guideline of respect, our opening meeting also made it clear that while group discussions and feedback are useful, only constructive criticism would be tolerated. Together, clear expectations, a set schedule and overall attitude of respect set the tone for a successful week of writing.
+
+\section*{Rule 6: Write}
+
+This is why you wanted to organise a retreat in the first place---to make progress on your academic writing. You have already created a schedule and a daily theme for yourself (see Rule 3) so it’s time to follow it. This is where the goals that you have set for yourself (see Rule 4) also come into play. Knowing what you are working towards, and having a plan of how you intend to get there, should provide you with the space needed to put words on the page and have productive writing blocks. However, writing is not easy and writers face many hurdles[~\cite{grogan2021}], such as a lack of motivation, uncertainty about what to do next, writer’s block, imposter syndrome, and more. These obstacles can easily disrupt even the best-laid plans. It is therefore important to have a backup plan.
+
+If you are struggling to get any writing done it may be a good time to take a break or switch tasks. It is proven that even short breaks can increase productivity [~\cite{lyubykh, carter2020}]. Alternatively, this could be a good time for you to do some research into writing development. If you are not being productive in writing, you may as well be productive in learning how to write. Everybody has different strategies that work for them. For example, some people prefer to cite as they write, whereas others prefer to write everything out quickly and then add citations as they edit. Some authors, such as Ernest Hemingway [~\cite{hemingway}], have even claimed that they purposely leave a sentence, paragraph, or idea unfinished at the end of their writing day specifically so they have something easy to start with for their next writing block. It is important to understand what works for you in terms of a writing practice and to reevaluate your process often to ensure it is still working [~\cite{peterson2018, grogan2021}].
+
+\section*{Rule 7: Lead an academic discussion}
+
+While the primary objective of a writing retreat is to write, there are also opportunities for other forms of professional development. Undertaking the PhD journey is daunting and different for every student, and it is easy to become so engrossed in your own work, that you forgot you are surrounded by people in the same situation as you. A writing retreat provides the opportunity to share your own research or discuss scientific/academic topics amongst your peers. While we found this occurs naturally throughout the retreat, especially within groups of similarly focused researchers, it was decided that a small block of time each day (see Rule 3) would be specifically allocated for students to share a talk or lead a discussion of their own with the other attendees. The casual, non-judgemental environment gave presenting students a chance to practice a seminar talk, get insight on methodology, analysis and results, or simply share "tips and tools of the trade". For many students, this was an opportunity to learn about the research their peers conduct; in a field as multi-faceted as marine science, it is common that we are unaware of the scope or type of research our peers are involved in.
+
+We suggest scheduling the discussions after writing blocks are complete for the day and spread them out over the retreat. Access to a projector and screen in our second retreat was beneficial. However, previously, we have simply shared from our laptop screens or consulted notes and found it just as engaging due to the small group attending the retreat. Talks were not strictly timed as it allowed for conversation throughout, but we aimed not to exceed 20 min per discussion. It is important to emphasise the casualness of such an exercise---students should not be using their time for writing anxiously preparing a conference-level presentation. It is simply an opportunity to share, learn, provide and gain insight. Importantly, these sections give a chance get to know one another and bound as fellow PhD students [~\cite{bernery, omeara}].
+
+\section*{Rule 8: Review and be reviewed}
+
+An important aspect of writing is the practice of giving and receiving revisions with your peers. It is important to remember that the feedback exchanged between peers should be constructive and can offer insight on gaps in clarity, logic, or structure. The use of neutral language should be encouraged [~\cite{parsons2021}]. There is the possibility you may not understand content your peer is working on, however, focusing on aspects of structure, prose, and overall writing flow is a good place to start with peer review and revisions. Receiving feedback from a peer outside of their field may provide different perspectives the author had not previously considered and can lead to more balanced and comprehensive writing. It is also important to receive feedback as much as you can provide it as this practice will encourage a collaborative approach to writing which can build confidence and resilience in both the reviewed and the reviewer.
+
+\section*{Rule 9: Have fun}
+
+A key aspect of a writing retreat is to have fun and enjoy the whole experience---from writing to exploring the local area. While on a writing retreat, it is important to take opportunities to experience new activities you may not usually get to. A retreat also presents a unique chance to bond with your peers while balancing downtime activities and writing time for optimal productivity.
+
+Before you embark on your writing retreat, we recommend that you do some research before arriving to see what is unique about the area to take advantage of what may be on offer. While based at our university’s field station, we had opportunities to aurora hunt and kiwi spot, explore the nearby Ulva island (a protected area), participate in bar trivia, and develop relationships with some of the locals. We also organised creative morning writing prompts (see Rule 3) and gave casual presentations (Rule 7) about various topics which were fun and engaging bonding activities.
+
+More rural places often have scenic landscapes, hospitable communities and limited distractions. This could restrict activity choices but may produce more quality experiences where you can get to know the local businesses and people on a more personal level. A retreat is not only about writing but an opportunity to engage with peers and have fun.
+
+\section*{Rule 10: Posterity -- Be accountable and acknowledge}
+
+Gathering feedback from participants of the retreat and drafting a report are important actions following the writing retreat. Allowing time for the participants to reflect on and discuss to their peers the pitfalls and peaks of the retreat on the last day or two of the retreat and then having them fill out a anonymous survey immediately after returning is very beneficial. By summarizing these points into a concise report soon after attending the retreat, points are clear in the minds of the participants and key issues or takeaways are not forgotten. Comments of the schedule, notes on things that went well, and notes of things that might need improvements are valuable to cement ideas and details that will fade in time before another retreat can be planned. This will reinforce great points from the retreat but more importantly creates some accountability for posterity. Knowledge transfer from one retreat to the next is difficult in an ever-changing student body, but creating a paper trail of advice and resources within your own department provides blueprints and templates for new volunteers to organize their own retreats. 
+%The post-retreat report can act as a manual for future students and helps to lower the barrier to organizing a productive event by being a reference to future leaders with answers to FAQs and examples of how to organize administrative tasks.
+
+In addition, give acknowledgement to the writing retreat in your work and publications and circulate this knowledge to your peers, your department, and your colleagues. Having acknowledgements of the retreat (potentially with a uniform phrase) can even provide a searchable tool in online databases. Creating a repository where work that has benefited from the writing retreat can be achieved by filtering these acknowledgements and compiling publications together in the same place. Highlighting to your department the quantity and quality of work that results from a writing retreat is key to securing the longevity of writing retreats. A list which updates into the future as new work is published that stemmed from the writing retreat means that administrative personnel can become aware of the significant impact this opportunity has provided student researchers. Both the scientific community and the university administration often use publication numbers as their tangible metric to interpret how their financial decisions have made an impact. Evidence of the how many papers may come out of a writing retreat by acknowledging the usefulness of it will help to capitalizing on this trend. A scientifically-productive retreat may ease the justification process of future student organizers, or even incentivise greater financial support from administrative groups if the expenditure of writing retreats are seen as a net-positive for publications.
+
+\section*{Conclusion}
+
+Following these set of rules, our writing retreats were sucessful. Colectivelly, we indeed experienced benefits reported in the literature, such as feeling empowered writers through supporting each other in a respectful and non-judgemental environment [~\cite{papen2018}], increasing our sense of belonging as PhD students [~\cite{omeara}] and decreasing our sense of isolation [~\cite{eardley2021}]. However, most importantly, we got our writing reatreat goals achieved. Some of the references herein can help with the theoretical side of writing, but ultimatelly writing is practice [~\cite{peterson2018, grogan2021}]. By facilitating the planning and execution of writing retreats, we hope this piece can foster scholarly productivity. Happy writing!
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 Appendix.}
+\label{S1_Appendix}
+{\bf Schedule Example.} Brief description...
+
+\paragraph*{S2 Appendix.}
+\label{S2_Appendix}
+{\bf Ground Rules.} Brief description...
+
+
+\section*{Acknowledgments}
+This manuscript is a contribution conceptualized, led, and written by PhD students, who attended writing retreats supported by the Department of Marine Science of the University of Otago, Aotearoa New Zealand. We hope writing retreats stay as a trend, fostering collaboration and friendship among students and promoting quality science. Thanks also to Tracy Rogers and Claire Hudson from the Higher Education Development Centre of the University of Otago for the support while organising both writing retreats, and the Southern Sea Hotel and the Rakiura/Stewart Island community for welcoming us. 
+
+\section*{Author Contributions}
+
+\paragraph*{Conceptualization:} Nicholas W. Daudt (lead); Claudia Hird; Eleanor Kelly; Elli Leinikki; Gretchen McCarthy; Ian S. Dixon-Anderson; Jackson Beagley; Jessica Moffitt; Joseph Curtis; Lindsay Wickman; Meghan Duffy; Saskia Foreman; Leah M. Crowe.
+
+\paragraph*{Project administration:} Nicholas W. Daudt.
+
+\paragraph*{Writing – original draft:}  Nicholas W. Daudt (lead); Claudia Hird; Eleanor Kelly; Gretchen McCarthy; Ian S. Dixon-Anderson; Jackson Beagley; Joseph Curtis; Meghan Duffy; Saskia Foreman; Leah M. Crowe.
+
+\paragraph*{Writing – review & editing:}  Nicholas W. Daudt (lead); Claudia Hird; Eleanor Kelly; Elli Leinikki; Gretchen McCarthy; Ian S. Dixon-Anderson; Jackson Beagley; Jessica Moffitt; Joseph Curtis; Lindsay Wickman; Meghan Duffy; Saskia Foreman; Leah M. Crowe.
+
+\nolinenumbers
+
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here. See http://journals.plos.org/plosone/s/latex for 
+% step-by-step instructions.
+% 
+%\begin{thebibliography}{10}
+
+%\bibitem{tydecks}
+%Tydecks L, Bremerich V, Jentschke I, Likens GE, Tockner K.
+%\newblock {{B}iological field stations: {A} global infrastructure for research, education, and public engagement}.
+%\newblock BioScience 2016;66(2):164--171.
+
+%\bibitem{hemingway}
+%Hemingway E.
+%\newblock {{M}onologue to the {M}aestro: {A} high seas letter}.
+%\newblock Esquire, Oct; 1935.
+
+%\bibitem{lyubykh}
+%Lyubykh Z, Gulseren D, Premji Z, Wingate TG, Deng C, Bélanger LJ, Turner N.
+%\newblock {{R}ole of work breaks in well-being and performance: {A} systematic review and future research agenda}.
+%\newblock J. Occup. Health Psychol. 2022;27(5):470--487.
+
+%\end{thebibliography}
+
+\bibliography{references}
+
+
+\end{document}
+
