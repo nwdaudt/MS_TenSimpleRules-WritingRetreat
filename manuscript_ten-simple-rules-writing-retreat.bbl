@@ -144,12 +144,6 @@ Peterson TC, Kleppner SR, Botham CM.
 \newblock PLoS Computational Biology. 2018;14(10):e1006379.
 \newblock doi:{10.1371/journal.pcbi.1006379}.
 
-\bibitem{sand2007}
-Sand-Jensen K.
-\newblock How to write consistently boring scientific literature.
-\newblock Oikos. 2007;116(5):723--727.
-\newblock doi:{10.1111/j.0030-1299.2007.15674.x}.
-
 \bibitem{tydecks2016}
 Tydecks L, Bremerich V, Jentschke I, Likens GE, Tockner K.
 \newblock Biological field stations: a global infrastructure for research,
@@ -205,6 +199,13 @@ Parsons CE, Baglini RB.
 \newblock Trends in Cognitive Sciences. 2021;25(8):639--641.
 \newblock doi:{10.1016/j.tics.2021.05.003}.
 
+\bibitem{borja2024}
+Borja A, Elliott M.
+\newblock Do you want your paper published?--Then referee others! The view from
+  seasoned editors.
+\newblock Estuarine Coastal and Shelf Science. 2024;310:109006.
+\newblock doi:{10.1016/j.ecss.2024.109006}.
+
 \bibitem{smith2023}
 Smith OM, Davis KL, Pizza RB, Waterman R, Dobson KC, Foster B, et~al.
 \newblock Peer review perpetuates barriers for historically excluded groups.
@@ -216,12 +217,5 @@ Saleh F.
 \newblock Peer review bullying threatens diversity, equity, and inclusion.
 \newblock Trends in Ecology \& Evolution. 2024;39(11):975--978.
 \newblock doi:{10.1016/j.tree.2024.09.001}.
-
-\bibitem{borja2024}
-Borja A, Elliott M.
-\newblock Do you want your paper published?--Then referee others! The view from
-  seasoned editors.
-\newblock Estuarine Coastal and Shelf Science. 2024;310:109006.
-\newblock doi:{10.1016/j.ecss.2024.109006}.
 
 \end{thebibliography}
