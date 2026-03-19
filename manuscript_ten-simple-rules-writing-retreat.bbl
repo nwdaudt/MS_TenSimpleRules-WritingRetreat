@@ -11,20 +11,20 @@ Horta H, Santos JM.
 Wilkins S, Hazzam J, Lean J.
 \newblock Doctoral publishing as professional development for an academic
   career in higher education.
-\newblock The International Journal of Management Education. 2021;19(1):100459.
+\newblock International Journal of Management Education. 2021;19(1):100459.
 \newblock doi:{10.1016/j.ijme.2021.100459}.
 
 \bibitem{boice1984}
 Boice R, Jones F.
 \newblock Why academicians don't write.
-\newblock The Journal of Higher Education. 1984;55(5):567--582.
+\newblock Journal of Higher Education. 1984;55(5):567--582.
 \newblock doi:{10.1080/00221546.1984.11780679}.
 
 \bibitem{hazelett2025}
 Hazelett DJ.
 \newblock An open letter to graduate students and other procrastinators: it's
   time to write.
-\newblock Nature Biotechnology. 2025; p. 1--4.
+\newblock Nature Biotechnology. 2025;43:447--450.
 \newblock doi:{10.1038/s41587-025-02584-1}.
 
 \bibitem{menzies2007}
@@ -32,6 +32,12 @@ Menzies H, Newson J.
 \newblock No time to think: academics' life in the globally wired university.
 \newblock Time \& Society. 2007;16(1):83--98.
 \newblock doi:{10.1177/0961463X07074103}.
+
+\bibitem{watermeyer2024generative}
+Watermeyer R, Phipps L, Lanclos D, Knight C.
+\newblock Generative AI and the automating of academia.
+\newblock Postdigital Science and Education. 2024;6(2):446--466.
+\newblock doi:{10.1007/s42438-023-00440-6}.
 
 \bibitem{murray2009}
 Murray R, Newton M.
@@ -67,6 +73,13 @@ Kornhaber R, Cross M, Betihavas V, Bridgman H.
   integrative review.
 \newblock Higher Education Research \& Development. 2016;35(6):1210--1227.
 \newblock doi:{10.1080/07294360.2016.1144572}.
+
+\bibitem{quynn2021sustainable}
+Quynn K, Stewart C.
+\newblock Sustainable writing for graduate students: writing retreats offer
+  vital support.
+\newblock Journal of Further and Higher Education. 2021;45(10):1385--1397.
+\newblock doi:{10.1080/0309877X.2021.1875200}.
 
 \bibitem{eardley2021}
 Eardley AF, Banister E, Fletcher M.
@@ -106,8 +119,7 @@ Bernery C, Lusardi L, Marino C, Philippe-Lesaffre M, Angulo E, Bonnaud E,
 Turbek SP, Chock TM, Donahue K, Havrilla CA, Oliverio AM, Polutchko SK, et~al.
 \newblock Scientific writing made easy: a step-by-step guide to undergraduate
   writing in the biological sciences.
-\newblock The Bulletin of the Ecological Society of America.
-  2016;97(4):417--426.
+\newblock Bulletin of the Ecological Society of America. 2016;97(4):417--426.
 \newblock doi:{10.1002/bes2.1258}.
 
 \bibitem{hotaling2020}
@@ -141,8 +153,14 @@ Mensh B, Kording K.
 \bibitem{peterson2018}
 Peterson TC, Kleppner SR, Botham CM.
 \newblock Ten simple rules for scientists: improving your writing productivity.
-\newblock PLoS Computational Biology. 2018;14(10):e1006379.
+\newblock PLOS Computational Biology. 2018;14(10):e1006379.
 \newblock doi:{10.1371/journal.pcbi.1006379}.
+
+\bibitem{drake2025}
+Drake JM, Han BA.
+\newblock How to write a scientific paper in fifteen steps.
+\newblock PLOS Computational Biology. 2025;21(9):e1013505.
+\newblock doi:{10.1371/journal.pcbi.1013505}.
 
 \bibitem{tydecks2016}
 Tydecks L, Bremerich V, Jentschke I, Likens GE, Tockner K.
@@ -150,6 +168,17 @@ Tydecks L, Bremerich V, Jentschke I, Likens GE, Tockner K.
   education, and public engagement.
 \newblock BioScience. 2016;66(2):164--171.
 \newblock doi:{10.1093/biosci/biv174}.
+
+\bibitem{CSI-funding}
+{Centre for Social Impact}. Funding guide; 2024.
+\newblock
+  \url{https://www.centreforsocialimpact.org.nz/knowledge-base/funding-guide}.
+
+\bibitem{ponomarenko2017ten}
+Ponomarenko J, Garrido R, Guig{\'o} R.
+\newblock Ten simple rules on how to organize a scientific retreat.
+\newblock PLOS Computational Biology. 2017;13(2):e1005344.
+\newblock doi:{10.1371/journal.pcbi.1005344}.
 
 \bibitem{wilson2019}
 Wilson S, Cutri J.
@@ -164,8 +193,7 @@ Wilson S, Cutri J.
 Grogan KE.
 \newblock Writing science: what makes scientific writing hard and how to make
   it easier.
-\newblock The Bulletin of the Ecological Society of America.
-  2021;102(1):e01800.
+\newblock Bulletin of the Ecological Society of America. 2021;102(1):e01800.
 \newblock doi:{10.1002/bes2.1800}.
 
 \bibitem{lyubykh2022}
@@ -179,6 +207,26 @@ Lyubykh Z, Gulseren D, Premji Z, Wingate TG, Deng C, B{\'e}langer LJ, et~al.
 Hemingway E.
 \newblock {M}onologue to the {M}aestro: a high seas letter.
 \newblock Esquire, Oct. 1935;.
+
+\bibitem{janta2014}
+Janta H, Lugosi P, Brown L.
+\newblock Coping with loneliness: a netnographic study of doctoral students.
+\newblock Journal of Further and Higher Education. 2014;38(4):553--571.
+\newblock doi:{10.1080/0309877X.2012.726972}.
+
+\bibitem{mantai2019}
+Mantai L.
+\newblock `A source of sanity': The role of social support for doctoral
+  candidates' belonging and becoming.
+\newblock International Journal of Doctoral Studies. 2019;14:367.
+\newblock doi:{10.28945/4275}.
+
+\bibitem{mills2024study}
+Mills L, Read GJ, Bragg JE, Hutchinson BT, Cox JA.
+\newblock A study into the mental health of PhD students in Australia:
+  investigating the determinants of depression, anxiety, and suicidality.
+\newblock Scientific Reports. 2024;14(1):22636.
+\newblock doi:{10.1038/s41598-024-72661-z}.
 
 \bibitem{guilford2001}
 Guilford WH.
@@ -217,5 +265,24 @@ Saleh F.
 \newblock Peer review bullying threatens diversity, equity, and inclusion.
 \newblock Trends in Ecology \& Evolution. 2024;39(11):975--978.
 \newblock doi:{10.1016/j.tree.2024.09.001}.
+
+\bibitem{crawford2024artificial}
+Crawford J, Allen KA, Pani B, Cowling M.
+\newblock When artificial intelligence substitutes humans in higher education:
+  the cost of loneliness, student success, and retention.
+\newblock Studies in Higher Education. 2024;49(5):883--897.
+\newblock doi:{10.1080/03075079.2024.2326956}.
+
+\bibitem{arapoff1967}
+Arapoff N.
+\newblock Writing: a thinking process.
+\newblock {TESOL} Quarterly. 1967;1(2):33--39.
+\newblock doi:{10.2307/3585751}.
+
+\bibitem{menary2007}
+Menary R.
+\newblock Writing as thinking.
+\newblock Language Sciences. 2007;29(5):621--632.
+\newblock doi:{10.1016/j.langsci.2007.01.005}.
 
 \end{thebibliography}
